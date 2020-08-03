@@ -1,10 +1,14 @@
 {
   "expo": {
+    "assetBundlePatterns": ["**/*"],
+    "icon": "./assets/icon.png",
+    "ios": {
+      "supportsTablet": true
+    },
     "name": "SpeedyPersistentState",
+    "orientation": "portrait",
     "slug": "SpeedyPersistentState",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -12,12 +16,6 @@
     },
     "updates": {
       "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
