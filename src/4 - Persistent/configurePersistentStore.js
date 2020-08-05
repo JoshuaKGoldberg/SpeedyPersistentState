@@ -6,7 +6,7 @@ import thunk from "redux-thunk";
 import { rootReducer } from "../shared/state/reducers";
 
 const persistConfig = {
-  key: "root",
+  key: "root-persistent",
   storage: AsyncStorage,
 };
 

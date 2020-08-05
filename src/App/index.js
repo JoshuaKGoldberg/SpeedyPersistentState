@@ -6,14 +6,16 @@ import { NaiveRoot } from "../1 - Naive";
 import { SelectiveRoot } from "../2 - Selective";
 import { ManualRoot } from "../3 - Manual";
 import { PersistentRoot } from "../4 - Persistent";
-import { useComponentChooser } from "./useComponentChooser";
+import { RecencyRoot } from "../5 - Recency";
 import { HomeView } from "./HomeView";
+import { useComponentChooser } from "./useComponentChooser";
 
 const components = {
   "1 - Naive": NaiveRoot,
   "2 - Selective": SelectiveRoot,
   "3 - Manual": ManualRoot,
   "4 - Persistent": PersistentRoot,
+  "5 - Recency": RecencyRoot,
 };
 
 const componentNames = Object.keys(components);
