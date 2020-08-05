@@ -7,5 +7,5 @@ import { StreakText } from "../basic/StreakText";
 export const Warm = () => {
   const warm = useSelector(selectWarm);
 
-  return <StreakText count={warm || "···"} />;
+  return <StreakText count={warm ?? "···"} />;
 };

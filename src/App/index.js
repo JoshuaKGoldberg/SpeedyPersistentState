@@ -4,7 +4,7 @@ import { StyleSheet, View } from "react-native";
 
 import { NaiveRoot } from "../1 - Naive";
 import { SelectiveRoot } from "../2 - Selective";
-import { AsyncRoot } from "../3 - Async";
+import { ManualRoot } from "../3 - Manual";
 import { PersistentRoot } from "../4 - Persistent";
 import { useComponentChooser } from "./useComponentChooser";
 import { HomeView } from "./HomeView";
@@ -12,20 +12,20 @@ import { HomeView } from "./HomeView";
 const components = {
   "1 - Naive": NaiveRoot,
   "2 - Selective": SelectiveRoot,
-  "3 - Async": AsyncRoot,
+  "3 - Manual": ManualRoot,
   "4 - Persistent": PersistentRoot,
 };
 
 const componentNames = Object.keys(components);
 
 export default function App() {
-  const [chooser, componentName] = useComponentChooser(componentNames);
+  const [chooser, componentName, key] = useComponentChooser(componentNames);
   const Component = components[componentName];
 
   return (
     <View style={styles.container}>
       {chooser}
-      <HomeView>{Component && <Component key={Date.now()} />}</HomeView>
+      <HomeView>{Component && <Component key={key} />}</HomeView>
       <StatusBar style="auto" />
     </View>
   );

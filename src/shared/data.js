@@ -13,15 +13,15 @@ const createFetcher = (data, min, max) => {
   };
 };
 
-export const fetchColdData = createFetcher(profileImage, 1000, 2000);
+export const fetchColdData = createFetcher(profileImage, 500, 1000);
 
-export const fetchWarmData = createFetcher(3, 1000, 2000);
+export const fetchWarmData = createFetcher(3, 1000, 1500);
 
 export const fetchHotData = createFetcher(
   [
     ["learn react", "learn redux", "learn thunks", "cry to sleep"],
     ["learn native", "learn expo", "learn hardware", "cry some more"],
   ],
-  1000,
+  1500,
   2000
 );
