@@ -3,6 +3,7 @@
 Hi! 👋
 
 This is the companion code for the [Speedy Expo Apps with Persistent Redux State](https://swmansion.com/academy/webinars/josh-goldberg-speedy-expo-apps-with-persistent-redux-state) webinar.
+You can watch it here: https://crowdcast.io/e/oyzoh0rz
 
 > React Native components can receive data from all sorts of places.
 > Particularly complex applications using Redux have become notorious for confusing data flows and hierarchies.
